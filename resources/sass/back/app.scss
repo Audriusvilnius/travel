@@ -1,0 +1,109 @@
+// Variables
+@import 'variables';
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+label {
+    font-size: 1.4em;
+    user-select: none;
+
+    &.pointer {
+        cursor: pointer;
+    }
+}
+
+h1 {
+    font-family: $sa;
+    font-weight: 900;
+    //color: skyblue;
+}
+
+// a.btn,
+// button.btn[type=submit] {
+//     font-size: 1.1em;
+//     margin: 0 0 0 10px;
+//     text-transform: uppercase;
+//     font-weight: 300;
+//     width: 90px;
+//     // font-family: $sa;
+// }
+
+.form-check {
+    position: relative;
+
+    input[type=checkbox] {
+        position: relative;
+        top: 5px;
+    }
+}
+
+.list-table {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__content {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 80%;
+
+        h3 {
+            font-family: $sa;
+            font-size: 1.8em;
+            width: 40%;
+        }
+
+        .alk {
+            svg {
+                width: 30px;
+                height:30px;
+                //fill: rgba(19, 139, 0, 0.249);
+            }
+        }
+
+        // .no-alk {
+        //     width: 40px;
+        //     height: 40px;
+        // }
+
+        .size {
+            font-size: 1.8em;
+            width: 10%;
+            text-align: center;
+        }
+
+        .price {
+            font-size: 1.6em;
+            width: 25%;
+            text-align: center;
+            font-weight: 300;
+        }
+
+        sup {
+            font-size: .8em;
+            width: 10%;
+            text-align: center;
+            font-weight: 100;
+            color:crimson;
+            font-style: italic;
+        }
+
+        .type {
+            font-size: 1.6em;
+            width: 30%;
+            font-weight: 400;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+
+.drink-vol {
+    display: none;
+}
